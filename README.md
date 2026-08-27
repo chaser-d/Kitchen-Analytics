@@ -65,5 +65,12 @@ The presentation layer is designed with an accessible, high-contrast operational
 
 ### How to Explore
 
-* **Live Dashboard:** [View on Tableau Public](/url?sa=i&source=web&rct=j&url=https://public.tableau.com/&ved=2ahUKEwja9_fFor2WAxV4jCsGHTbnGaMQg5wRegYIAAgGEEk&opi=89978449&cd&psig=AOvVaw2qe0Q6O69KB25Sx8sllbSE&ust=1787798501112000) 
+* ![Kitchen FinOps Dashboard Preview](dashboard_preview.png) 
 * **Data Models:** Review the transformation queries located in /models/marts/
+
+
+
+
+
+
+

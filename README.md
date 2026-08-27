@@ -69,8 +69,3 @@ The presentation layer is designed with an accessible, high-contrast operational
 * **Data Models:** Review the transformation queries located in /models/marts/
 
 
-
-
-
-
-

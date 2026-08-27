@@ -65,7 +65,7 @@ The presentation layer is designed with an accessible, high-contrast operational
 
 ### How to Explore
 
-* ![Kitchen FinOps Dashboard Preview](dashboard_preview.png) 
+![Kitchen FinOps Dashboard Preview](dashboard_preview.png) 
 * **Data Models:** Review the transformation queries located in /models/marts/
 
 

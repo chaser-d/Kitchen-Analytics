@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: stg_tickets
+    description: 'Silver-layer cleansed kitchen telemetry ledger. Standardizes timestamps and calculates line preparation metrics.'
+    columns:
+       - name: ticket_id
+         description: 'Primary transactional system key for kitchen orders. Must be unique and non-null.'
+         tests:
+           - unique
+           - not_null
+       - name: kitchen_prep_time_minutes
+         description: 'Fulfillment duration tracked in minutes. Used to monitor back-of-house assembly line bottlenecks.'
+         tests:
+           - not_null
+
+  - name: stg_commissions
+    description: 'Silver-layer delivery marketplace ledger tracking margin deductions from third-party logistics platforms.'
+    columns:
+       - name: ticket_id
+         description: 'Primary structural link to corresponding kitchen orders.'
+         tests:
+           - unique
+           - not_null
+       - name: commission_rate_pct
+         description: 'Calculated platform fee percentage. Monitored to flag contract compliance anomalies across food aggregate partners.'
+         tests:
+           - not_null
+
+  - name: stg_clicks
+    description: 'Silver-layer user behavior analytics clickstream ledger. Resolves tracking drops and enforces platform ingestion rules.'
+    columns:
+       - name: event_id
+         description: 'Primary unique identifier for a user interaction event.'
+         tests:
+           - unique
+           - not_null
+       - name: platform_channel
+         description: 'The digital surface where the customer interacted. Monitored via a strict data contract constraint.'
+         tests:
+           - accepted_values:
+               values: ['Web-App', 'iOS-App', 'DoorDash-API']

@@ -1,0 +1,8 @@
+restaurant_finops:
+  outputs:
+    dev:
+      type: duckdb
+      path: restaurant_operations.db
+      database: restaurant_operations
+      schema: main
+  target: dev

@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: restaurant_raw
+    database: restaurant_operations
+    schema: main
+    tables:
+      - name: raw_customer_clicks
+      - name: raw_kitchen_tickets
+      - name: raw_marketplace_commissions

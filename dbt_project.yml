@@ -1,0 +1,11 @@
+name: 'restaurant_finops_analytics'
+version: '1.0.0'
+profile: 'restaurant_finops'
+model-paths: ['models']
+clean-targets: ['target', 'dbt_packages']
+models:
+  restaurant_finops_analytics:
+    staging:
+      materialized: view
+    marts:
+      materialized: table
